@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /*ajustar fontes*/
+  font-family: 'Inter'; sans-serif;
+}
+
+body {
+  background-color: #8C602A;
+  box-sizing: border-box;
+
+}
+
+/*.logo {
+  width: 120px;
+  height: 48px;
+  padding-top: 40px;
+  padding-left: 40px;
+}*/
+
+main {
+    padding: 1% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.section1 {
+    /*width: 50%;
+    display: flex;
+    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+.section1__input__text {
+    /*font-size: 32px;
+    color: #F2C53D;
+    resize: none;
+    border: transparent;
+    background-color: transparent; */
+    font-size: 1.6rem;
+    color: #F2C53D;
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 1rem;
+    height: 20rem;
+}
+
+.section1__input__text::placeholder {
+    color: #F2C53D;
+}
+
+.section1__alert {
+    display: flex;
+    justify-content: left;
+    gap: 8px;
+    padding-bottom: 8px;
+    color: #F2F2F2;
+}
+
+.section1__button {
+    display: flex;
+    gap: 16px;
+}
+
+.section1__button__encrypt {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #F2C53D;
+    color: #8C602A;
+}
+
+.section1__button__uncrypt {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #F2F2F2;
+    color: #8C602A;
+    border-color: #8C602A
+}
+
+.section2 {
+    background-color: white;
+    width: 25rem;
+    height: 50rem;
+    border-radius: 32px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.section2__figure {
+    display: flex;
+    justify-content: center;
+}
+
+.section2__figure__image {
+    width: 336px;
+    height: 304px;
+}
+
+.section2__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section2__content__subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.section2__content__text {
+    display: flex;
+    text-align: center;    
+    font-size: 16px;
+    color: #495057;
+}
+
+.section2__button {
+    display: flex;
+    justify-content: center;
+}
+
+.section2__button__copy {
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #F2C53D;
+    color: #8C602A;
+    border-color: #8C602A;
+}
