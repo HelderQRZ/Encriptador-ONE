@@ -1,13 +1,13 @@
-// O conteúdo abaixo não afetou o programa
-// const textArea = document.getElementById("inputText");
-// const message = document.getElementById("outputText");
-
 // Criptografar
 
 function btnEncrypt() {
 	const textEncrypted = encrypt(document.getElementById("inputText").value);
 	document.getElementById("outputText").value = textEncrypted;
 	document.getElementById("inputText").value = "";
+
+	// Manipulação de aparecimento e desaparecimento da Section2
+	document.querySelector(".section2__top").style.display = "none";
+	document.querySelector(".section2__bottom").style.display = "flex";
 }
 
 function encrypt(stringEncrypted) {
@@ -32,6 +32,10 @@ function btnUncrypt() {
 	const textUncrypted = Uncrypt(document.getElementById("inputText").value);
 	document.getElementById("outputText").value = textUncrypted;
 	document.getElementById("inputText").value = "";
+
+	// Manipulação de aparecimento e desaparecimento da Section2
+	document.querySelector(".section2__top").style.display = "none";
+	document.querySelector(".section2__bottom").style.display = "flex";
 }
 
 function Uncrypt(stringUncrypted) {
@@ -55,4 +59,8 @@ function btnCopy() {
 	const output = document.getElementById("outputText");
 	output.select();
 	document.execCommand('cut');
+
+	// Manipulação de aparecimento e desaparecimento da Section2
+	document.querySelector(".section2__top").style.display = "block";
+	document.querySelector(".section2__bottom").style.display = "none";
 }

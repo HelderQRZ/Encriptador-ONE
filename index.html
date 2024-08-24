@@ -10,7 +10,21 @@
 </head>
 <body>
   <header>
-    
+    <section class="header__left">
+      <img class="icons__minhaFoto" src="/assets/euPixelArt.png" alt="foto do Helder">
+      <p class="headerText">Desenvolvido por Helder Queiroz</p>
+    </section >
+    <section class="header__right">
+      <a href="https://www.linkedin.com/in/helderqueiroz-dev/">
+        <img class="icons__socialMedia" src="/assets/linkedin.png" alt="linkedin">
+      </a>
+      <a href="https://github.com/HelderQRZ">
+        <img class="icons__socialMedia" src="/assets/github.png" alt="Github">
+      </a>
+      <a href="https://www.instagram.com/helderqrz/">
+        <img class="icons__socialMedia" src="/assets/instagram.png" alt="Instagram">
+      </a>
+    </section>
   </header>
   <main>
     <section class="section1">
@@ -20,7 +34,7 @@
       <div class="section1__bottom">
         <div class="section1__bottom__alert">
           <img class= "section1__bottom__alert__icon" src="/assets/pokeball.png" alt="icone de alera">
-          <p class= "section1__bottom__alert__text">Apenas letras minúsculas e sem acento.</p>
+          <p class= "section1__bottom__alert__text">Retorna letras minúsculas.</p>
         </div>
         <div class="section1__bottom__btn">
           <input onclick="btnEncrypt()" class="section1__bottom__btn__encrypt" type="button" value="Criptografar"/>
@@ -40,12 +54,12 @@
       </div>
       <div class="section2__bottom">
         <textarea id="outputText" class="message"></textarea>
-        <input id="btn__copy" onclick="btnCopy()" class="section2__bottom__btncopy" type="button" value="Copiar"/
+        <input id="btn__copy" onclick="btnCopy()" class="section2__bottom__btncopy" type="button" value="Copiar"/>
       </div>
     </section>
   </main>
   <footer>
-    
+
   </footer>
 </body>
 </html>
