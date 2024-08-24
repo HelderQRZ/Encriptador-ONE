@@ -5,3 +5,4 @@ Footer: Pendente
 Responsividade: Pendente
 Encriptação: Pendente
 JS: Pendente
+README: Pendente
