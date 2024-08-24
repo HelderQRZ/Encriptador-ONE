@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/*@import url('https://fonts.cdnfonts.com/css/pokemon-solid?styles=24573');
+font-family: 'Pokemon Solid', sans-serif;
+font-weight: 400;
+font-style: normal;*/
+
 * {
   margin: 0;
   padding: 0;
-
-  /*ajustar fontes*/
-  font-family: 'Inter'; sans-serif;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 1px black;
 }
 
 body {
@@ -20,39 +27,30 @@ body {
 }*/
 
 main {
-    padding: 1% 15%;
+    padding: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 80px;
-}
-
-.section1 {
-    /*width: 50%;
-    display: flex;
-    flex-direction: column;*/
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-around;
+    justify-content: center;
     gap: 10rem;
 }
 
-.section1__input__text {
-    /*font-size: 32px;
-    color: #F2C53D;
-    resize: none;
-    border: transparent;
-    background-color: transparent; */
-    font-size: 1.6rem;
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.section1__input__text {   
+    font-size: 2rem;
     color: #F2C53D;
     background-color: transparent;
-    font-family: "Inter", sans-serif;
     outline: none;
     border: none;
     resize: none;
-    padding: 1rem;
-    height: 20rem;
+    padding: 2rem;
+    width: 38rem;
+
 }
 
 .section1__input__text::placeholder {
@@ -62,40 +60,65 @@ main {
 .section1__alert {
     display: flex;
     justify-content: left;
-    gap: 8px;
-    padding-bottom: 8px;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
     color: #F2F2F2;
 }
 
-.section1__button {
+.section1__bottom {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
 }
 
-.section1__button__encrypt {
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 16px;
+.section1__bottom__alert {
+    display: flex;
+    align-items: center;
+}
+
+.section1__bottom__alert__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+}
+
+.section1__bottom__alert__text {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    color: #F2F2F2;
+
+}
+
+.section1__bottom__btn {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.section1__bottom__btn__encrypt {
+    width: 20.5rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
     background-color: #F2C53D;
     color: #8C602A;
+    border-color: #26261D;
 }
 
-.section1__button__uncrypt {
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 16px;
+.section1__bottom__btn__uncrypt {
+    width: 20.5rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
     background-color: #F2F2F2;
     color: #8C602A;
-    border-color: #8C602A
+    border-color: #26261D;
 }
 
 .section2 {
-    background-color: white;
-    width: 25rem;
-    height: 50rem;
-    border-radius: 32px;
+    background-color: #F2F2F2;
+    border-radius: 2rem;
     flex-direction: column;
     align-content: center;
 }
@@ -106,40 +129,65 @@ main {
 }
 
 .section2__figure__image {
-    width: 336px;
-    height: 304px;
+    width: 21rem;
+    height: 19rem;
+    padding: 5rem 2.5rem;
 }
 
 .section2__content {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
+    padding: 2rem;
 }
 
 .section2__content__subtitle {
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 .section2__content__text {
     display: flex;
     text-align: center;    
-    font-size: 16px;
-    color: #495057;
+    font-size: 1.5rem;
+    color: #8C602A;
 }
 
-.section2__button {
+.section2__bottom {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+
 }
 
-.section2__button__copy {
-    width: 336px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 16px;
+.message {
+    font-size: 2rem;
+    color: #F2C53D;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 2rem;
+    width: 20rem;
+}
+
+.section2__bottom__btncopy {
+    width: 20.5rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
     background-color: #F2C53D;
     color: #8C602A;
-    border-color: #8C602A;
+    border-color: #26261D;
+
+
+
+}
+
+.section2__bottom {
+    width: 100%;
+    display: none;
 }

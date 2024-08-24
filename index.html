@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Encriptador</title>
 </head>
 <body>
@@ -14,26 +15,32 @@
   <main>
     <section class="section1">
       <div class="section1__input">
-        <textarea class="section1__input__text" placeholder="Digite seu texto"></textarea>
+        <textarea id="inputText" class="section1__input__text" type="text" placeholder="Digite seu texto"></textarea>
       </div>
-      <div class="section1__button">
-        <input class="section1__button__encrypt" type="button" value="Criptografar">
-        <input class="section1__button__uncrypt" type="button" value="Descriptografar">
+      <div class="section1__bottom">
+        <div class="section1__bottom__alert">
+          <img class= "section1__bottom__alert__icon" src="/assets/pokeball.png" alt="icone de alera">
+          <p class= "section1__bottom__alert__text">Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="section1__bottom__btn">
+          <input onclick="btnEncrypt()" class="section1__bottom__btn__encrypt" type="button" value="Criptografar"/>
+          <input onclick="btnUncrypt()" class="section1__bottom__btn__uncrypt" type="button" value="Descriptografar"/>
+        </div>
       </div>    
     </section>
     <section class="section2">
-      <div class="section2__figure"> 
-        <img class= "section2__figure__image" src="/assets/DetectivePikachu.png" alt="Detetive Pikachu">
-      </div> 
-      <div class="section2__content">
-        <h2 class="section2__content__subtitle">Nenhuma mensagem encontrada</h2>
-        <p class="section2__content__text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      <div class="section2__top">
+        <div class="section2__figure"> 
+          <img class= "section2__figure__image" src="/assets/DetectivePikachu.png" alt="Detetive Pikachu">
+        </div> 
+        <div class="section2__content">
+          <h2 class="section2__content__subtitle">Nenhuma mensagem encontrada</h2>
+          <p class="section2__content__text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
       </div>
-      <div class="section2__button">
-        <input class="section2__button__copy" type="button" value="Copiar">
-      </div>
-      <div class="section2__result">
-        <p class="section2__result__text"></p>
+      <div class="section2__bottom">
+        <textarea id="outputText" class="message"></textarea>
+        <input id="btn__copy" onclick="btnCopy()" class="section2__bottom__btncopy" type="button" value="Copiar"/
       </div>
     </section>
   </main>
